@@ -24,9 +24,10 @@ def group_bookings_by_day(booking_splits):
 def print_calendar(grouped_bookings):
     for day, day_bookings in sorted(grouped_bookings.items()):
         print(day)
-        for start_time, employee_code in day_bookings:
+        for start_time, employee_code in day_bookings:0
+            if((start_time.strftime)<17:30)){
             print(f"{start_time.strftime('%H:%M')} {employee_code}")
-        print()
+        print()}
 
 input_data = [
     "2020-08-17 10:17:06 EMP001",
